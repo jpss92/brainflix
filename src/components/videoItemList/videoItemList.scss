@@ -1,0 +1,53 @@
+.video {
+    &__item {
+        &--list {
+            margin-bottom: 1rem;
+        }
+    }
+}
+  
+  
+.highlight {
+    display: flex;
+    margin-top: 1rem;
+    
+
+    &__section {
+        margin: 1.5rem 1rem 1rem;
+    }
+
+    &__sub {
+        display: flex;
+        margin-left: 3.5rem;
+
+        &--likes {
+            margin-right: .7rem;
+            margin-left: 1.2rem;
+        }
+
+        &--views {
+            margin-right: .5rem;
+        }
+
+        &--info {
+            border-top: 3px solid black;
+            border-bottom: 3px solid black;
+            padding-bottom: 1rem;
+
+        }
+        
+    }
+
+    &__title {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 1rem;
+    }
+
+    &__article {
+        margin: 1rem 0 1rem;
+    }
+
+}
+  
+  

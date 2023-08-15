@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    &__search {
+        height: 2.25rem;
+        position: relative;
+        top: -.8rem;
+        margin-right: 1rem;
+        width: 80%;
+
+        &--bar {
+        height: 2.25rem;
+        margin: .5rem 1rem .5rem;
+        width: 95%
+        
+        };
+    };
+};

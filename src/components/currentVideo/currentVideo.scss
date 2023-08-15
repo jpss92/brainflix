@@ -1,0 +1,32 @@
+.video {
+    display: flex;
+    justify-content: space-between;
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+
+        &--views {
+          
+            
+        }
+    };
+};
+
+.comment {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    &__name {
+        
+    }
+
+    &__likes {
+        display: flex;
+        margin: 1rem;
+
+
+    }
+}
