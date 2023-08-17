@@ -1,18 +1,65 @@
+@font-face {
+  font-family: "AnReg";
+  src: url("../assets/Font/AvenirNextLTPro-Regular.otf") format("opentype"), url("../assets/Font/Alternative files/AvenirNextLTPro.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AnBold";
+  src: url("../assets/Font/AvenirNextLTPro-Bold.otf") format("opentype"), url("../assets/Font/Alternative files/AvenirNextLTProBold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
 .video {
   display: flex;
   justify-content: space-between;
+  margin-top: 0.5rem;
 }
 .video__info {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 0.5rem;
+  margin-right: 3.5rem;
 }
-.comment {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+.video__info--views {
+  color: #AFAFAF;
 }
-.comment__likes {
-  display: flex;
+.video__info--likes {
+  color: #AFAFAF;
+}
+.video__info--timestamp {
+  color: #AFAFAF;
+}
+.video__title {
+  margin: 1rem 0 1rem;
+  font-family: "AnBold";
+  font-size: 2.0625rem;
+}
+.video__player {
+  width: 112%;
+  margin-left: -1rem;
+}
+.video__player--background {
+  background-color: #000000;
+}
+.video__current {
   margin: 1rem;
-}/*# sourceMappingURL=currentVideo.css.map */
+}
+.video__details {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 1rem 0 1rem;
+}
+.video__channel {
+  font-family: "AnBold";
+}
+.video__description {
+  margin: 1rem 0 1rem;
+  font-family: "Anreg";
+  font-size: 0.8125rem;
+}
+
+#likes {
+  padding-right: 1rem;
+}
+/*# sourceMappingURL=currentVideo.css.map */

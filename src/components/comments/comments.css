@@ -10,30 +10,27 @@
   font-weight: 700;
   font-style: normal;
 }
-.button {
-  width: 95%;
-  background-color: #0095ff;
-  color: #FFFFFF;
-  height: 2.5rem;
-  margin: 0.5rem 1rem 0.5rem;
+.comment {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  border-radius: 0.25rem;
-  line-height: 1.25rem;
+  justify-content: space-between;
+  margin: 0 1rem 1rem;
+}
+.comment__info {
+  border-top: 1px solid #AFAFAF;
+  border-bottom: 1px solid #AFAFAF;
+  font-family: "AnReg";
   font-size: 0.8125rem;
-  border: none;
+  padding: 1rem;
 }
-.button__icon {
-  margin-right: 6rem;
-  margin-left: 1rem;
+.comment__timestamp {
+  color: #AFAFAF;
 }
-
-#comment__btn {
-  width: 80%;
-  margin-bottom: 1rem;
+.comment__likes {
+  display: flex;
+  margin: 1rem;
 }
-#comment__btn--icon {
-  margin-right: 4rem;
+.comment__name {
+  margin-left: -1rem;
+  font-family: "AnBold";
 }
-/*# sourceMappingURL=button.css.map */
+/*# sourceMappingURL=comments.css.map */

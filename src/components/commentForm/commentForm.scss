@@ -1,0 +1,28 @@
+.comment {
+
+    &__form {
+        
+        
+        
+
+        &--data {
+         width: 70%;
+        display: flex;
+        margin-left: 25%;
+        flex-direction: column;
+        
+            
+        };
+
+        &--input {
+            height: 4rem;
+        };
+    };
+};
+
+#comment {
+    &__btn {
+        width: 80%;
+        
+    }
+}

@@ -1,32 +1,69 @@
+@import '../../partials/_fonts';
+@import '../../partials//_varibles';
+
 .video {
     display: flex;
     justify-content: space-between;
+    margin-top: .5rem;
+    
 
     &__info {
         display: flex;
         justify-content: space-between;
+        margin-bottom: .5rem;
+        margin-right: 3.5rem;
 
         &--views {
-          
-            
+            color: $primary-color3;
+        }
+
+        &--likes {
+            color: $primary-color3;
+        }
+
+        &--timestamp {
+            color: $primary-color3;
         }
     };
+
+    &__title {
+        margin: 1rem 0 1rem;
+        font-family: 'AnBold';
+        font-size: $font33;
+    }
+
+    &__player {
+        width: 112%;
+        margin-left: -1rem;
+
+        &--background {
+            background-color: $secondary-color1;
+        }
+    }
+
+    &__current {
+        margin: 1rem;
+    }
+
+    &__details {
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        padding: 1rem 0 1rem;
+
+    }
+
+    &__channel {
+        font-family: 'AnBold';
+    }
+
+    &__description {
+        margin: 1rem 0 1rem;
+        font-family: 'Anreg';
+        font-size: $font13;
+
+    }
 };
 
-.comment {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-
-    &__name {
-        
-    }
-
-    &__likes {
-        display: flex;
-        margin: 1rem;
-
-
-    }
+#likes{
+    padding-right: 1rem;
 }

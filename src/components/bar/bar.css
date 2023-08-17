@@ -6,7 +6,6 @@
 .nav__search {
   height: 2.25rem;
   position: relative;
-  top: -0.8rem;
   margin-right: 1rem;
   width: 80%;
 }
@@ -14,4 +13,5 @@
   height: 2.25rem;
   margin: 0.5rem 1rem 0.5rem;
   width: 95%;
-}/*# sourceMappingURL=bar.css.map */
+}
+/*# sourceMappingURL=bar.css.map */

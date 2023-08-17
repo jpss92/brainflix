@@ -1,0 +1,35 @@
+@import '../../partials/_fonts';
+@import '../../partials/_varibles';
+
+.comment {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1rem 1rem;
+
+   &__info {
+    border-top: 1px solid $primary-color3;
+    border-bottom: 1px solid $primary-color3;
+    font-family: 'AnReg';
+    font-size: $font13;
+    padding:1rem
+
+   }
+
+   &__timestamp {
+    color: $primary-color3;
+   }
+
+  
+
+    &__likes {
+        display: flex;
+        margin: 1rem;
+
+
+    }
+
+    &__name {
+        margin-left: -1rem;
+        font-family: 'AnBold';
+    }
+}

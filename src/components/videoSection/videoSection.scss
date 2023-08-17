@@ -1,0 +1,14 @@
+@import '../../partials/_fonts';
+@import '../../partials/_mixins';
+@import '../../partials/_varibles';
+
+.next {
+    &__video {
+        font-size: $font14;
+        font-family: 'AnReg';
+        color: $primary-color3;
+        margin-left: 1rem;
+        margin-top: 1rem;
+         
+    };
+};

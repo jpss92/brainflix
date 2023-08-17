@@ -10,30 +10,11 @@
   font-weight: 700;
   font-style: normal;
 }
-.button {
-  width: 95%;
-  background-color: #0095ff;
-  color: #FFFFFF;
-  height: 2.5rem;
-  margin: 0.5rem 1rem 0.5rem;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  border-radius: 0.25rem;
-  line-height: 1.25rem;
-  font-size: 0.8125rem;
-  border: none;
-}
-.button__icon {
-  margin-right: 6rem;
+.next__video {
+  font-size: 0.875rem;
+  font-family: "AnReg";
+  color: #AFAFAF;
   margin-left: 1rem;
+  margin-top: 1rem;
 }
-
-#comment__btn {
-  width: 80%;
-  margin-bottom: 1rem;
-}
-#comment__btn--icon {
-  margin-right: 4rem;
-}
-/*# sourceMappingURL=button.css.map */
+/*# sourceMappingURL=videoSection.css.map */

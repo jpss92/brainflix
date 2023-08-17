@@ -1,9 +1,9 @@
 import "./button.scss";
 
-
-function Button() {
+function Button({ src,children, id }) {
     return(
-        <button className="button"><img className="button__icon" src="" alt="button"></img>Upload</button>
+        <button id={id} className="button"><img className="button__icon"  src={src} alt="button"></img>{children
+}</button>
     );
 }
 

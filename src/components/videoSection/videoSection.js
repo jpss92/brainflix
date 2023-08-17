@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
-import VideoList from '../../videoList/videoList.js';
-import CurrentVideo from '../../currentVideo/currentVideo.js';
-import VideoData from '../../../assets/Data/video-details.json';
+import VideoList from '../videoList/videoList.js';
+import CurrentVideo from '../currentVideo/currentVideo.js';
+import VideoData from '../../assets/Data/video-details.json';
+import '../videoSection/videoSection.scss';
+import Comments from '../comments/comments.js';
 
 function VideoSection() {
   const [currentVideo, setCurrentVideo] = useState(VideoData[0]);
@@ -12,13 +14,15 @@ function VideoSection() {
   };
 
   return (
-    <>
+    <div>
       <CurrentVideo currentVideo={currentVideo} />
+      <Comments currentVideo={currentVideo}/>
+      <p className='next__video'>Next Video</p>
       <VideoList
         handleChange={handleChange}
         videoList={videoList.filter((video) => video.id !== currentVideo.id)}
       />
-    </>
+    </div>
   );
 }
 

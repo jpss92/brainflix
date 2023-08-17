@@ -7,14 +7,15 @@
     &__search {
         height: 2.25rem;
         position: relative;
-        top: -.8rem;
         margin-right: 1rem;
         width: 80%;
 
         &--bar {
-        height: 2.25rem;
-        margin: .5rem 1rem .5rem;
-        width: 95%
+            display: flex;
+            height: 2.25rem;
+            margin: .5rem 1rem .5rem;
+            width: 95%
+       
         
         };
     };
