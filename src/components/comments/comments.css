@@ -33,4 +33,10 @@
   margin-left: -1rem;
   font-family: "AnBold";
 }
+
+@media (min-width: 768px) {
+  .comment__info {
+    font-size: 0.875rem;
+  }
+}
 /*# sourceMappingURL=comments.css.map */

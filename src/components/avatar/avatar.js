@@ -3,7 +3,7 @@ import "./avatar.scss";
 function Avatar({ src }) {
     return(
         
-        <img src={src}  className="avatar"></img>
+        <img src={src}  alt="User" className="avatar"></img>
         
     );
 }

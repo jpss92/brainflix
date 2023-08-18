@@ -1,5 +1,6 @@
 @import '../../partials/_varibles.scss';
 @import '../../partials/_fonts';
+@import '../../partials/_mixins';
 
 .button {
     width: 95%;
@@ -14,12 +15,9 @@
     line-height: 1.25rem;
     font-size: .8125rem;
     border: none;
-    
-    
-    
 
     &__icon {
-        margin-right: 6rem;
+        margin-right: 30%;
         margin-left: 1rem;
     }
     
@@ -32,6 +30,17 @@
         
         &--icon {
             margin-right: 4rem;
-        }
+        };
+    };
+};
+
+@include tablet {
+    .button {
+        width: 40%;
+        padding-right: 2rem;
+
+       &__icon {
+            margin-right: 20%;
+       }
     }
 }

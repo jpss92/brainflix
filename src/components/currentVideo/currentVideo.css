@@ -12,13 +12,13 @@
 }
 .video {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   margin-top: 0.5rem;
+  width: 40%;
 }
 .video__info {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   margin-right: 3.5rem;
 }
 .video__info--views {
@@ -33,7 +33,7 @@
 .video__title {
   margin: 1rem 0 1rem;
   font-family: "AnBold";
-  font-size: 2.0625rem;
+  font-size: 1.5rem;
 }
 .video__player {
   width: 112%;
@@ -49,9 +49,13 @@
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   padding: 1rem 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8125rem;
 }
 .video__channel {
   font-family: "AnBold";
+  margin-bottom: 1rem;
 }
 .video__description {
   margin: 1rem 0 1rem;
@@ -59,7 +63,39 @@
   font-size: 0.8125rem;
 }
 
-#likes {
-  padding-right: 1rem;
+@media (min-width: 768px) {
+  .video {
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 0.875rem;
+  }
+  .video__details {
+    border-top: none;
+    padding: 0;
+  }
+  .video__player {
+    width: 90%;
+    margin-left: 5%;
+  }
+  .video__current {
+    width: 100%;
+    margin-left: 0;
+  }
+  .video__channel {
+    margin: 0 2rem 0 1rem;
+  }
+  .video__info {
+    margin-right: 1rem;
+  }
+  .video__description {
+    font-size: 0.875rem;
+  }
+  .video__title {
+    margin-bottom: 0;
+    font-size: 2.0625rem;
+  }
+  #views {
+    margin-left: 3rem;
+  }
 }
 /*# sourceMappingURL=currentVideo.css.map */

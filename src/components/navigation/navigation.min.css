@@ -1,2 +1,2 @@
-.nav{align-items:center;flex-direction:column;display:flex;flex-direction:column;margin-left:1rem;margin-right:1rem}.nav__logo{height:2.25rem;margin:1.5rem 0 .5rem}
+.nav{align-items:center;flex-direction:column;display:flex;flex-direction:column;margin-left:1rem;margin-right:1rem}.nav__logo{height:2.25rem;margin:1.5rem 0 .5rem}@media(min-width: 768px){.nav{display:flex;flex-direction:row;align-items:center;margin-top:2rem}.nav__logo{width:7.5rem;margin-top:.375rem;margin-right:3rem}}
 /*# sourceMappingURL=navigation.min.css.map */

@@ -16,12 +16,15 @@ function VideoSection() {
   return (
     <div>
       <CurrentVideo currentVideo={currentVideo} />
-      <Comments currentVideo={currentVideo}/>
-      <p className='next__video'>Next Video</p>
-      <VideoList
-        handleChange={handleChange}
-        videoList={videoList.filter((video) => video.id !== currentVideo.id)}
-      />
+      <div className="video__section">
+          <Comments  currentVideo={currentVideo}/>
+          <p className='next__video'>Next Video</p>
+        <div className='comment'>
+          <VideoList
+          handleChange={handleChange}
+          videoList={videoList.filter((video) => video.id !== currentVideo.id)}/>
+          </div>
+      </div>
     </div>
   );
 }

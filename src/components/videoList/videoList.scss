@@ -1,0 +1,10 @@
+@import '../../partials/_mixins';
+
+@include desktop {
+    .video {
+        &__list {
+            display: flex;
+            
+        }
+    }
+}

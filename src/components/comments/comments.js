@@ -6,7 +6,7 @@ import CurrentVideo from '../currentVideo/currentVideo.js';
 
 function Comments({ currentVideo }) {
     return(
-    <>
+    <div className='comment__section'>
     <CommentForm />
       <div>
         {currentVideo.comments && (
@@ -24,7 +24,7 @@ function Comments({ currentVideo }) {
           </div>
         )}
       </div>
-      </>
+      </div>
     )
  };
 

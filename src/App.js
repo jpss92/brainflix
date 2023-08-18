@@ -1,4 +1,3 @@
-import CommentForm from './components/commentForm/commentForm.js';
 import Navigation from './components/navigation/navigation.js';
 import VideoSection from './components/videoSection/videoSection.js';
 

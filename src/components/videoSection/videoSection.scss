@@ -12,3 +12,21 @@
          
     };
 };
+
+@include tablet {
+    .next {
+        &__video {
+            font-size: $font14;
+        }
+    }
+
+    .video {
+        
+        
+        
+        &__section {
+            display: inline-flex;
+            
+        }
+    }
+}

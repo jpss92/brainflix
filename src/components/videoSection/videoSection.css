@@ -17,4 +17,13 @@
   margin-left: 1rem;
   margin-top: 1rem;
 }
+
+@media (min-width: 768px) {
+  .next__video {
+    font-size: 0.875rem;
+  }
+  .comment__section {
+    display: inline-flex;
+  }
+}
 /*# sourceMappingURL=videoSection.css.map */

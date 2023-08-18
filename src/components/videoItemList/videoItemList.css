@@ -31,4 +31,12 @@
 }
 .video__thumbnail--channel {
   font-size: 0.8125rem;
-}/*# sourceMappingURL=videoItemList.css.map */
+}
+
+@media (min-width: 768px) {
+  .video__item--list {
+    font-size: 0.875rem;
+    width: 45%;
+  }
+}
+/*# sourceMappingURL=videoItemList.css.map */

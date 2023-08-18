@@ -1,2 +1,2 @@
-.comment__form--data{width:70%;display:flex;margin-left:25%;flex-direction:column}.comment__form--input{height:4rem}#comment__btn{width:80}
+.comment__form--data{width:70%;display:flex;margin-left:25%;flex-direction:column}.comment__form--input{height:4rem}#comment__btn{width:80%}@media(min-width: 768px){.comment__form{display:flex}}
 /*# sourceMappingURL=commentForm.min.css.map */

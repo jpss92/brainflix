@@ -1,3 +1,6 @@
+@import '../../partials/_varibles';
+@import '../../partials/_mixins';
+
 * {
     margin: 0;
     padding: 0;
@@ -9,14 +12,32 @@
         position: relative;
         margin-right: 1rem;
         width: 80%;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: .25rem;
+        border:1px solid $secondary-color3;
+        
 
         &--bar {
             display: flex;
             height: 2.25rem;
             margin: .5rem 1rem .5rem;
             width: 95%
-       
-        
         };
     };
 };
+
+.search {
+    &__bar {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@include tablet {
+    .nav {
+        &__search {
+            width: 60%;
+        }
+    }
+}

@@ -1,16 +1,17 @@
 @import '../../partials/_fonts';
 @import '../../partials//_varibles';
+@import '../../partials/_mixins';
 
 .video {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     margin-top: .5rem;
+    width: 40%;
     
 
     &__info {
         display: flex;
-        justify-content: space-between;
-        margin-bottom: .5rem;
+        margin-bottom: 1rem;
         margin-right: 3.5rem;
 
         &--views {
@@ -29,7 +30,7 @@
     &__title {
         margin: 1rem 0 1rem;
         font-family: 'AnBold';
-        font-size: $font33;
+        font-size: $font24;
     }
 
     &__player {
@@ -49,11 +50,15 @@
         border-top: 1px solid black;
         border-bottom: 1px solid black;
         padding: 1rem 0 1rem;
+        display: flex;
+        justify-content: space-between;
+        font-size: $font13;
 
     }
 
     &__channel {
         font-family: 'AnBold';
+        margin-bottom: 1rem;
     }
 
     &__description {
@@ -64,6 +69,52 @@
     }
 };
 
-#likes{
-    padding-right: 1rem;
+
+@include tablet {
+    .video {
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-size: $font14;
+
+        &__details {
+            border-top: none;
+            padding: 0;
+        }
+
+        &__player {
+            width: 90%;
+            margin-left: 5%;
+        }
+
+        &__current {
+            width: 100%;
+            margin-left: 0;
+            
+        }
+
+        &__channel {
+            margin: 0 2rem 0 1rem;
+        }
+
+        &__info {
+            margin-right: 1rem;
+        }
+
+        &__description {
+            font-size: $font14;
+        }
+
+        &__title {
+            margin-bottom: 0;
+            font-size: $font33;
+            
+        }
+
+    }
+
+    #views {
+        margin-left: 3rem;
+    }
 }
+
+
