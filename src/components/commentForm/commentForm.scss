@@ -24,6 +24,10 @@
     };
 };
 
+label {
+    font-size: .625rem;
+}
+
 @include tablet {
     .comment {
 
@@ -31,4 +35,26 @@
             display: flex;
         }
     }
-}
+};
+
+@include desktop {
+
+    .comment {
+
+        &__form {
+            align-items: center;
+            margin: 24px;
+
+            &--input {
+                height: 2.5rem;
+            }
+
+            &--data {
+                position: relative;
+                top: -.5rem;
+            };
+            
+        };
+    };
+
+};

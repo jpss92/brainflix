@@ -4,6 +4,7 @@ import CurrentVideo from '../currentVideo/currentVideo.js';
 import VideoData from '../../assets/Data/video-details.json';
 import '../videoSection/videoSection.scss';
 import Comments from '../comments/comments.js';
+import Description from '../description/description';
 
 function VideoSection() {
   const [currentVideo, setCurrentVideo] = useState(VideoData[0]);
@@ -17,9 +18,12 @@ function VideoSection() {
     <div>
       <CurrentVideo currentVideo={currentVideo} />
       <div className="video__section">
-          <Comments  currentVideo={currentVideo}/>
-          <p className='next__video'>Next Video</p>
+        <div>
+          <Description currentVideo={currentVideo} />
+          <Comments  currentVideo={currentVideo} s/>
+        </div>
         <div className='comment'>
+          <p className='next__video'>Next Video</p>
           <VideoList
           handleChange={handleChange}
           videoList={videoList.filter((video) => video.id !== currentVideo.id)}/>

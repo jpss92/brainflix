@@ -39,13 +39,30 @@
   @include tablet {
     .video {
         &__item {
+
             &--list {
-                font-size: $font14;
-                width: 45%;
+                font-size: $font14; 
             }
         }
     }
     
-  }
+};
+
+@include desktop {
+
+    .video{
+
+        &__item {
+
+            &--list {
+               
+            }
+        }
+
+        &__section {
+            width: 75%;
+        }
+    }
+}
   
   

@@ -115,6 +115,16 @@
     #views {
         margin-left: 3rem;
     }
+};
+
+@include desktop {
+    .video {
+
+        &__player {
+            width: 68%;
+            margin-left: 16%;
+        }
+    }
 }
 
 
