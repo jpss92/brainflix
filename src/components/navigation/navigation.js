@@ -12,10 +12,10 @@ function Navigation() {
         <div className="nav">
             <img className="nav__logo" src={Logo} alt="Logo" />
         <div className="nav__search--bar">
-        <Search src={searchImg}/>
+        <Search id='upload__bar' src={searchImg}/>
         <Avatar className="nav__avatar"src={profileImg} />
         </div>
-        <Button src={uploadImg}>Upload</Button>
+        <Button  src={uploadImg}>Upload</Button>
         </div>
     );
 };

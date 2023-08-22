@@ -1,4 +1,4 @@
-import  './description.scss';
+import './description.scss';
 import views from '../../assets/Icons/views.svg';
 import likes from '../../assets/Icons/likes.svg';
 import CurrentVideo from '../currentVideo/currentVideo.js';

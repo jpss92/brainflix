@@ -1,0 +1,27 @@
+@import '../../partials/_fonts';
+@import '../../partials/_mixins';
+@import '../../partials/_varibles';
+
+.video {
+
+    &__title {
+        margin: 1rem 0 1rem;
+        font-family: 'AnBold';
+        font-size: $font24;
+    };
+
+    &__details {
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        padding: 1rem 0 1rem;
+        display: flex;
+        justify-content: space-between;
+        font-size: $font13;
+    };
+
+    &__description {
+        margin: 1rem 0 1rem;
+        font-family: 'Anreg';
+        font-size: $font13;
+    }
+};

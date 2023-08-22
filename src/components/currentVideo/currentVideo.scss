@@ -27,12 +27,6 @@
         }
     };
 
-    &__title {
-        margin: 1rem 0 1rem;
-        font-family: 'AnBold';
-        font-size: $font24;
-    }
-
     &__player {
         width: 112%;
         margin-left: -1rem;
@@ -46,26 +40,9 @@
         margin: 1rem;
     }
 
-    &__details {
-        border-top: 1px solid black;
-        border-bottom: 1px solid black;
-        padding: 1rem 0 1rem;
-        display: flex;
-        justify-content: space-between;
-        font-size: $font13;
-
-    }
-
     &__channel {
         font-family: 'AnBold';
         margin-bottom: 1rem;
-    }
-
-    &__description {
-        margin: 1rem 0 1rem;
-        font-family: 'Anreg';
-        font-size: $font13;
-
     }
 };
 
