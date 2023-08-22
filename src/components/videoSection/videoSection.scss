@@ -14,21 +14,26 @@
     };
 };
 
+#next {
+    &__video {
+        flex-direction: column;
+    };
+}
+
 @include tablet {
     .next {
         &__video {
             font-size: $font14;
-        }
-    }
+        };
+    };
 
     .video {
-        
-        
         
         &__section {
             display: flex;
             margin: 1.5rem 12%;
             
-        }
-    }
-}
+        };
+    };
+};
+

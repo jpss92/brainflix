@@ -18,6 +18,10 @@
   margin-top: 1rem;
 }
 
+#next__video {
+  flex-direction: column;
+}
+
 @media (min-width: 768px) {
   .next__video {
     font-size: 0.875rem;

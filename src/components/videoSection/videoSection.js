@@ -22,7 +22,7 @@ function VideoSection() {
           <Description currentVideo={currentVideo} />
           <Comments  currentVideo={currentVideo} s/>
         </div>
-        <div className='comment'>
+        <div id='next__video' className='comment'>
           <p className='next__video'>Next Video</p>
           <VideoList
           handleChange={handleChange}

@@ -10,25 +10,35 @@
   font-weight: 700;
   font-style: normal;
 }
-.video__title {
-  margin: 1rem 0 1rem;
-  font-family: "AnBold";
-  font-size: 1.5rem;
-}
-.video__details {
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  padding: 1rem 0 1rem;
+.comment {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  font-size: 0.8125rem;
+  margin: 0 1rem 1rem;
 }
-.video__description {
-  margin: 1rem 0 1rem;
-  font-family: "Anreg";
+.comment__info {
+  flex-direction: row;
+  border-top: 1px solid #AFAFAF;
+  border-bottom: 1px solid #AFAFAF;
+  font-family: "AnReg";
   font-size: 0.8125rem;
+  padding: 1rem;
 }
-.video__description--info {
+.comment__timestamp {
+  color: #AFAFAF;
+}
+.comment__likes {
+  display: flex;
   margin: 1rem;
 }
-/*# sourceMappingURL=description.css.map */
+.comment__name {
+  margin-left: -1rem;
+  font-family: "AnBold";
+}
+
+@media (min-width: 768px) {
+  .comment__info {
+    font-size: 0.875rem;
+  }
+}
+/*# sourceMappingURL=comments.css.map */

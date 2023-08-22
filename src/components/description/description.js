@@ -6,7 +6,7 @@ import { useState } from 'react';
 
 function Description({ currentVideo }) {
     return(
-        <div>
+        <div className='video__description--info'>
             <h1 className="video__title">{currentVideo.title}</h1>
       <div className="video__details">
         <div className="video">

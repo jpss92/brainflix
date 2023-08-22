@@ -6,7 +6,7 @@ import addComment from '../../assets/Icons/add_comment.svg';
 function CommentForm() {
     return (
         <div className="comment__form">
-            <Avatar />
+            <Avatar id='comment__avatar'/>
         <form className="comment__form--data" >
             <label>JOIN THE CONVERSATION</label>
             <textarea className="comment__form--input" placeholder="Add a new comment"></textarea>

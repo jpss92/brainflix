@@ -23,5 +23,9 @@
         margin: 1rem 0 1rem;
         font-family: 'Anreg';
         font-size: $font13;
+
+        &--info {
+            margin: 1rem;
+        }
     }
 };

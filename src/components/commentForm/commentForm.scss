@@ -19,9 +19,16 @@
 
 #comment {
     &__btn {
-        width: 80%;
-        
+        width: 70%;
+        margin-bottom: 1rem;
+        margin-left: 30%;
     };
+
+    &__avatar {
+        position: relative;
+        top: 2rem;
+        left: 1.5rem;
+    }
 };
 
 label {

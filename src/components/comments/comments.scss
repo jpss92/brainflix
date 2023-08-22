@@ -5,10 +5,11 @@
 .comment {
     display: flex;
     justify-content: space-between;
-    flex-direction: column;
     margin: 0 1rem 1rem;
 
    &__info {
+    
+    flex-direction: row;
     border-top: 1px solid $primary-color3;
     border-bottom: 1px solid $primary-color3;
     font-family: 'AnReg';

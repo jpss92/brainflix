@@ -23,16 +23,6 @@
     
 }
 
-#comment {
-    &__btn {
-        width: 80%;
-        margin-bottom: 1rem;
-        margin-left: 20%;
-        
-        
-    };
-};
-
 @include tablet {
     .button {
         width: 40%;

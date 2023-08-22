@@ -29,12 +29,6 @@
   margin-left: 1rem;
 }
 
-#comment__btn {
-  width: 80%;
-  margin-bottom: 1rem;
-  margin-left: 20%;
-}
-
 @media (min-width: 768px) {
   .button {
     width: 40%;
