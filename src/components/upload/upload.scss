@@ -1,0 +1,35 @@
+@import '../../partials/_fonts';
+@import '../../partials/_mixins';
+@import '../../partials/_varibles';
+
+
+.upload {
+    margin: 1rem;
+    font-family: 'AnReg';
+    font-size: $font10;
+
+    &__img {
+        width: 100%;
+    }
+
+    &__title {
+        margin: 1rem 0 1rem;
+    }
+
+    &__input {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 0 1rem;
+    }
+
+    &__cancel {
+        text-align: center;
+        margin-top: 2rem;
+        color: $secondary-color2;
+    }
+
+    &__label {
+        margin-bottom: .5rem;
+        color: $primary-color3;
+    }
+}

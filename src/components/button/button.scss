@@ -3,11 +3,11 @@
 @import '../../partials/_mixins';
 
 .button {
-    width: 95%;
+    width: 100%;
     background-color: $primary-color2;
     color: $primary-color4;
     height: 2.5rem;
-    margin: .5rem 1rem .5rem;
+    margin: .5rem 0 .5rem;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -25,7 +25,7 @@
 
 @include tablet {
     .button {
-        width: 40%;
+         
         padding-right: 2rem;
 
        &__icon {

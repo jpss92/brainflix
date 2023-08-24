@@ -6,19 +6,21 @@ import '../navigation/navigation.scss';
 import profileImg from '../../assets/Images/Mohan-muruge.jpg';
 import uploadImg from '../../assets/Icons/upload.svg';
 import searchImg from '../../assets/Icons/search.svg';
+import { Link } from 'react-router-dom';
 
 function Navigation() {
-    return (
+    return(
         <div className="nav">
             <img className="nav__logo" src={Logo} alt="Logo" />
         <div className="nav__search--bar">
         <Search id='upload__bar' src={searchImg}/>
         <Avatar className="nav__avatar"src={profileImg} />
         </div>
-        <Button  src={uploadImg}>Upload</Button>
+        <Link to='/upload' className='nav__btn--link'>
+            <Button src={uploadImg}>Upload</Button>
+        </Link>
         </div>
     );
 };
-export default Navigation;
 
-console.log(Navigation);
+export default Navigation;

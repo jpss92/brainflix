@@ -10,34 +10,37 @@
   font-weight: 700;
   font-style: normal;
 }
-.comment {
+.video__item--list {
+  margin: 1rem 0;
   display: flex;
-  justify-content: space-between;
-  margin: 0 1rem 1rem;
 }
-.comment__info {
-  flex-direction: row;
-  border-top: 1px solid #AFAFAF;
-  border-bottom: 1px solid #AFAFAF;
-  font-family: "AnReg";
+.video__thumbnail {
+  margin-left: 1rem;
+}
+.video__thumbnail--img {
+  border-radius: 8px;
+  min-width: 120px;
+  height: 4.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.video__thumbnail--title {
+  margin: 0.5rem 1rem 0.5rem 0rem;
   font-size: 0.8125rem;
-  padding: 1rem;
-}
-.comment__timestamp {
-  color: #AFAFAF;
-}
-.comment__likes {
-  display: flex;
-  margin: 1rem;
-}
-.comment__name {
-  margin-left: -1rem;
   font-family: "AnBold";
+}
+.video__thumbnail--channel {
+  font-size: 0.8125rem;
 }
 
 @media (min-width: 768px) {
-  .comment__info {
+  .video__item--list {
     font-size: 0.875rem;
   }
 }
-/*# sourceMappingURL=comments.css.map */
+@media (min-width: 1280px) {
+  .video__section {
+    width: 75%;
+  }
+}
+/*# sourceMappingURL=videoItemList.css.map */

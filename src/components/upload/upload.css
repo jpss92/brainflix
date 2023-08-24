@@ -10,29 +10,29 @@
   font-weight: 700;
   font-style: normal;
 }
-.video__section {
+.upload {
+  margin: 1rem;
+  font-family: "AnReg";
+  font-size: 0.625rem;
+}
+.upload__img {
   width: 100%;
 }
-
-.next__video {
-  font-size: 0.875rem;
-  font-family: "AnReg";
-  color: #AFAFAF;
-  margin-left: 1rem;
-  margin-top: 1rem;
+.upload__title {
+  margin: 1rem 0 1rem;
 }
-
-#next__video {
+.upload__input {
+  display: flex;
   flex-direction: column;
+  margin: 1rem 0 1rem;
 }
-
-@media (min-width: 1280px) {
-  .next__video {
-    font-size: 0.875rem;
-  }
-  .video__section {
-    display: flex;
-    margin: 1.5rem 0 1.5rem;
-  }
+.upload__cancel {
+  text-align: center;
+  margin-top: 2rem;
+  color: #0065ad;
 }
-/*# sourceMappingURL=videoSection.css.map */
+.upload__label {
+  margin-bottom: 0.5rem;
+  color: #AFAFAF;
+}
+/*# sourceMappingURL=upload.css.map */

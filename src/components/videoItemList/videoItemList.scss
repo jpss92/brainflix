@@ -5,7 +5,7 @@
 .video {
     &__item {
         &--list {
-            margin: 1rem;
+            margin: 1rem 0;
             display: flex;
         }
     }
@@ -15,8 +15,8 @@
 
         &--img {
         border-radius: 8px;
-        min-width: 145px;
-        height: 5rem;
+        min-width: 120px;
+        height: 4.5rem;
         object-fit: cover;
         
         };

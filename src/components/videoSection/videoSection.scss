@@ -2,6 +2,11 @@
 @import '../../partials/_mixins';
 @import '../../partials/_varibles';
 
+.video {
+    &__section {
+        width: 100%;
+    }
+}
 .next {
     &__video {
         font-size: $font14;
@@ -20,7 +25,7 @@
     };
 }
 
-@include tablet {
+@include desktop {
     .next {
         &__video {
             font-size: $font14;
@@ -31,7 +36,7 @@
         
         &__section {
             display: flex;
-            margin: 1.5rem 12%;
+            margin: 1.5rem 0 1.5rem;
             
         };
     };
