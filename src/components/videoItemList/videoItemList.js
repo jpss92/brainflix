@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const VideoItemList = ({ video, handleChange }) => {
   
     return (
-      // <Link to={`/videos/${video.id}`}>
+      <Link to={`/videos/${video.id}`}>
       <li onClick={() => handleChange(video.id)} className="video__item--list">
         <img className="video__thumbnail--img" src={video.image} alt="Thumbnail"></img>
         <div className='video__thumbnail'>
@@ -12,7 +12,7 @@ const VideoItemList = ({ video, handleChange }) => {
           <div className='video__thumbnail--channel'>{video.channel}</div>
         </div>
       </li>
-      // </Link>
+       </Link>
       
     );
   };

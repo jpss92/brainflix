@@ -7,6 +7,7 @@ import VideoList from './components/videoList/videoList.js';
 import { useState } from 'react';
 import VideoData from './assets/Data/video-details.json';
 import CurrentVideo from './components/currentVideo/currentVideo.js';
+import Description from './components/description/description.js';
 
 
 

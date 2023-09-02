@@ -14,8 +14,6 @@ let {videoId} = useParams();
   const [currentVideo, setCurrentVideo] = useState(null);
   const [videoList, setVideoList] = useState([]);
   
-
-  
   useEffect(() => {
 
     axios
@@ -38,6 +36,13 @@ let {videoId} = useParams();
          setCurrentVideo(updatedVideoList.find(video => video.id === id));
       }) 
   };
+
+  const handleChange = (id) => {
+
+    fetchVideoDetails();
+    // setCurrentVideo(VideoData.find((video) => video.id === id));
+  };
+
 
   
 
