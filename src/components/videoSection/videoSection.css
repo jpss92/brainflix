@@ -10,6 +10,10 @@
   font-weight: 700;
   font-style: normal;
 }
+.video__section {
+  width: 100%;
+}
+
 .next__video {
   font-size: 0.875rem;
   font-family: "AnReg";
@@ -23,7 +27,7 @@
   width: 40%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1280px) {
   .next__video {
     font-size: 0.875rem;
   }

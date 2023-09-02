@@ -6,6 +6,7 @@ import Comments from '../comments/comments.js';
 import Description from '../description/description';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
+import VideoItemList from '../videoItemList/videoItemList.js';
 
 function VideoSection() {
   const api = 'https://project-2-api.herokuapp.com';
@@ -21,6 +22,7 @@ let {videoId} = useParams();
       .then(res => {
         setVideoList(res.data);
         // setCurrentVideo(res.data[0]);
+        
       }) 
   }, []); 
 
@@ -34,13 +36,10 @@ let {videoId} = useParams();
           video.id === id ? { ...video, ...res.data } : video);
          setVideoList(updatedVideoList);
          setCurrentVideo(updatedVideoList.find(video => video.id === id));
+
+        
+        
       }) 
-  };
-
-  const handleChange = (id) => {
-
-    fetchVideoDetails();
-    // setCurrentVideo(VideoData.find((video) => video.id === id));
   };
 
 

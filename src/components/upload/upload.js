@@ -1,8 +1,9 @@
-import './Upload.scss';
+import './upload.scss';
 import Navigation from '../navigation/navigation';
 import uploadImg from '../../assets/Images/Upload-video-preview.jpg';
 import uploadIcon from '../../assets/Icons/publish.svg';
 import Button from '../button/button';
+// import { Link } from 'react-router-dom';
 
 
 function Upload() {
@@ -23,7 +24,7 @@ function Upload() {
             <Button src={uploadIcon}>Publish</Button>
             <div className='upload__cancel'>CANCEL</div>
         </div>
-
+        
     )
 };
 

@@ -1,11 +1,11 @@
 import '../videoItemList/videoItemList.scss';
 import { Link } from 'react-router-dom';
  
-const VideoItemList = ({ video, handleChange }) => {
+const VideoItemList = ({ video,  }) => {
   
     return (
       <Link to={`/videos/${video.id}`}>
-      <li onClick={() => handleChange(video.id)} className="video__item--list">
+      <li className="video__item--list">
         <img className="video__thumbnail--img" src={video.image} alt="Thumbnail"></img>
         <div className='video__thumbnail'>
           <div className='video__thumbnail--title'>{video.title}</div>
