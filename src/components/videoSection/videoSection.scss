@@ -17,6 +17,7 @@
 #next {
     &__video {
         flex-direction: column;
+        width: 40%
     };
 }
 
@@ -31,9 +32,9 @@
         
         &__section {
             display: flex;
-            margin: 1.5rem 12%;
             
         };
+
     };
 };
 

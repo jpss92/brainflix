@@ -21,6 +21,8 @@
             height: 4rem;
         };
     };
+
+    
 };
 
 #comment {
@@ -30,25 +32,55 @@
         margin-left: 30%;
     };
 
-    &__avatar {
+&__avatar {
         position: relative;
         top: 3rem;
-        left: 1.5rem;
+        left: 1.5rem;  
 
-    }
+    };
+    
 };
 
 label {
     font-size: .625rem;
-}
+};
 
 @include tablet {
     .comment {
 
         &__form {
             display: flex;
-        }
-    }
+            justify-content: center;
+            align-items: center;
+            height: 5.5rem;
+            position: relative;
+            top: -.5rem;
+            margin-left: 2rem;
+
+            &--data {
+                margin: 1rem;
+                height: 3.25rem;
+            };
+        };
+
+    };
+};
+
+#comment {
+    &__btn {
+        margin: 0;
+        margin-top: .5rem;
+    };
+
+    &__avatar {
+        position: relative;
+        top: 0rem;
+        left: -.25rem;
+        width: 2.5rem;
+        height: 2.5rem;
+    };
+
+    
 };
 
 @include desktop {
@@ -56,17 +88,9 @@ label {
     .comment {
 
         &__form {
-            align-items: center;
-            margin: 1.5rem;
-           
-
+        
             &--input {
                 height: 2.5rem;
-            }
-
-            &--data {
-                position: relative;
-                top: -.5rem;
             };
             
         };
