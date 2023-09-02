@@ -1,13 +1,15 @@
 import './description.scss';
 import views from '../../assets/Icons/views.svg';
 import likes from '../../assets/Icons/likes.svg';
-import CurrentVideo from '../currentVideo/currentVideo.js';
-import { useState } from 'react';
 
-function Description({ currentVideo }) {
+function Description({ currentVideo, handleChange, video}) {
+  console.log(currentVideo);
+
+  if (!currentVideo !== currentVideo.title) {
+
     return(
-        <div className='video__description--info'>
-            <h1 className="video__title">{currentVideo.title}</h1>
+        <div  className='video__description--info'>
+            <h1 onClick={() => handleChange(video.id)} className="video__title">{currentVideo.title}</h1>
       <div className="video__details">
         <div className="video">
           <div className='video__channel'>{currentVideo.channel}</div>
@@ -28,6 +30,6 @@ function Description({ currentVideo }) {
       <div className="video__description">{currentVideo.description}</div>
         </div>
     );
+    } 
 };
-
 export default Description; 

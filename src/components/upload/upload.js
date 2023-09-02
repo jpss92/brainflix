@@ -1,4 +1,4 @@
-import './upload.scss';
+import './Upload.scss';
 import Navigation from '../navigation/navigation';
 import uploadImg from '../../assets/Images/Upload-video-preview.jpg';
 import uploadIcon from '../../assets/Icons/publish.svg';
@@ -7,8 +7,7 @@ import Button from '../button/button';
 
 function Upload() {
     return(
-        <>
-        <Navigation />
+        
         <div className='upload'>
             <h1 className='upload__title'>Upload Video</h1>
             <div className='upload__label'>VIDEO THUMBNAIL</div>
@@ -24,7 +23,7 @@ function Upload() {
             <Button src={uploadIcon}>Publish</Button>
             <div className='upload__cancel'>CANCEL</div>
         </div>
-        </>
+
     )
 };
 

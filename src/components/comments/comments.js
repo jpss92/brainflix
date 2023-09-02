@@ -5,6 +5,8 @@ import CurrentVideo from '../currentVideo/currentVideo.js';
 
 
 function Comments({ currentVideo }) {
+  
+
     return(
     <div className='comment__section'>
     <CommentForm />
@@ -27,5 +29,7 @@ function Comments({ currentVideo }) {
       </div>
     )
  };
+
+
 
  export default Comments;

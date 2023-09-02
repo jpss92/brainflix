@@ -11,12 +11,14 @@ import { Link } from 'react-router-dom';
 function Navigation() {
     return(
         <div className="nav">
+            <Link to='/'>
             <img className="nav__logo" src={Logo} alt="Logo" />
-        <div className="nav__search--bar">
-        <Search id='upload__bar' src={searchImg}/>
-        <Avatar className="nav__avatar"src={profileImg} />
+            </Link>
+            <div className="nav__search--bar">
+            <Search id='upload__bar' src={searchImg}/>
+            <Avatar className="nav__avatar"src={profileImg} />
         </div>
-        <Link to='/upload' className='nav__btn--link'>
+        <Link to='upload' className='nav__btn--link'>
             <Button src={uploadImg}>Upload</Button>
         </Link>
         </div>
