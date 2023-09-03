@@ -11,7 +11,7 @@ import VideoItemList from '../videoItemList/videoItemList.js';
 function VideoSection() {
   const api = 'https://project-2-api.herokuapp.com';
   const apiKey = '?api_key=3cac4cb8-8b10-4983-891a-2b230666a31c'
-let {videoId} = useParams();
+  let {videoId} = useParams();
   const [currentVideo, setCurrentVideo] = useState(null);
   const [videoList, setVideoList] = useState([]);
   
@@ -21,22 +21,16 @@ let {videoId} = useParams();
       .get(api + '/videos/' + apiKey)
       .then(res => {
         setVideoList(res.data);
-        // setCurrentVideo(res.data[0]);
-        
       }) 
   }, []); 
 
   const fetchVideoDetails = (id) => {
-    console.log(id);
     axios
       .get(api + '/videos/' + id + apiKey)
       .then(res => {
         setCurrentVideo(res.data);
         const updatedVideoList = videoList.map(video =>
-          video.id === id ? { ...video, ...res.data } : video); 
-
-        
-        
+        video.id === id ? { ...video, ...res.data } : video);
       }) 
   };
 
@@ -44,9 +38,7 @@ useEffect(() => {
   let id = videoId || videoList[0]?.id
   if(id){
 fetchVideoDetails(id);}
-  console.log('test')
 },[videoList, videoId]);
-
 
   return (
     <div>

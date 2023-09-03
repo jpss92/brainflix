@@ -3,8 +3,6 @@ import '../currentVideo/currentVideo.scss';
 
 const CurrentVideo = ({ currentVideo }) => {
 
-  
-
   return (
     
     <div className="video__current">

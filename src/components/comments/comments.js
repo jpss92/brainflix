@@ -3,11 +3,9 @@ import CommentForm from '../commentForm/commentForm';
 import '../comments/comments.scss';
 import CurrentVideo from '../currentVideo/currentVideo.js';
 
-
 function Comments({ currentVideo }) {
   
-
-    return(
+  return(
     <div className='comment__section'>
     <CommentForm />
       <div>

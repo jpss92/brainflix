@@ -3,7 +3,6 @@ import Navigation from '../navigation/navigation';
 import uploadImg from '../../assets/Images/Upload-video-preview.jpg';
 import uploadIcon from '../../assets/Icons/publish.svg';
 import Button from '../button/button';
-// import { Link } from 'react-router-dom';
 
 
 function Upload() {

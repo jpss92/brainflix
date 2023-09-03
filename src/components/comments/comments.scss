@@ -24,13 +24,9 @@
     color: $primary-color3;
    }
 
-  
-
     &__likes {
         display: flex;
         margin: 1rem;
-
-
     }
 
     &__name {
@@ -43,7 +39,6 @@
         &__info {
             font-size: $font14;
         };
-
-        
+  
     };
 }
