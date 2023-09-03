@@ -16,7 +16,7 @@ function Navigation() {
             </Link>
             <div className="nav__search--bar">
             <Search id='upload__bar' src={searchImg}/>
-            <Avatar className="nav__avatar"src={profileImg} />
+            <Avatar id="nav__avatar" className="nav__avatar"src={profileImg} />
         </div>
         <Link to='upload' className='nav__btn--link'>
             <Button src={uploadImg}>Upload</Button>

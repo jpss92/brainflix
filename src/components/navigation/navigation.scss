@@ -16,6 +16,7 @@
     &__btn {
         &--link {
             width: 100%
+            
         }
     }
     
@@ -44,6 +45,34 @@
             margin-top: .375rem;
             margin-right: 20%
             
-        }
+        };
     };
+};
+
+@include desktop {
+   .nav {
+    &__btn {
+        &--link {
+            position: relative;
+            right: 19rem;
+            width: 20%  
+        };
+    };
+
+    &__sesarch {
+        margin-left: 4rem;  
+        &--bar {
+           
+        }
+    }
+   };
+
+   #nav {
+    &__avatar {
+        position: relative;
+        left: 48%;
+    }
+   }
+
+
 };

@@ -22,11 +22,13 @@
 #next {
     &__video {
         flex-direction: column;
-        width: 40%
+        margin-left: 1rem;
+        width: 60%
+        
     };
 }
 
-@include desktop {
+@include tablet {
     .next {
         &__video {
             font-size: $font14;
@@ -37,9 +39,24 @@
         
         &__section {
             display: flex;
+            flex-direction: column;
             
         };
 
     };
+
+    #next {
+        &__video {
+            width: 40%
+        }
+    }
 };
+
+@include desktop {
+    .video {
+        &__section {
+           flex-direction: row;
+        }
+    }
+}
 

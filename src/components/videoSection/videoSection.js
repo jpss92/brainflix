@@ -33,17 +33,12 @@ let {videoId} = useParams();
       .then(res => {
         setCurrentVideo(res.data);
         const updatedVideoList = videoList.map(video =>
-          video.id === id ? { ...video, ...res.data } : video);
-         setVideoList(updatedVideoList);
-         setCurrentVideo(updatedVideoList.find(video => video.id === id));
+          video.id === id ? { ...video, ...res.data } : video); 
 
         
         
       }) 
   };
-
-
-  
 
 useEffect(() => {
   let id = videoId || videoList[0]?.id
@@ -57,8 +52,10 @@ fetchVideoDetails(id);}
     <div>
    {currentVideo &&  <CurrentVideo currentVideo={currentVideo} />}
       <div className="video__section">
+        <div>
       {currentVideo &&<Description currentVideo={currentVideo} />}
         {currentVideo &&  <Comments  currentVideo={currentVideo} />}
+        </div>
         <div id='next__video' className='comment'>
           <p className='next__video'>Next Video</p>
           {currentVideo && <VideoList
