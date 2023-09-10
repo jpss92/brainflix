@@ -29,13 +29,14 @@
     &__btn {
         width: 70%;
         margin-bottom: 1rem;
-        margin-left: 5%;
+        margin-left: 30%;
     };
 
 &__avatar {
         position: relative;
         top: 3rem;
         left: 1.5rem;  
+        height: 2.25rem;
     };
 };
 
@@ -62,22 +63,24 @@ label {
         };
 
     };
+
+    #comment {
+        &__btn {
+            margin: 0;
+            margin-top: .5rem;
+        };
+    
+        &__avatar {
+            position: relative;
+            top: 0rem;
+            left: -.25rem;
+            width: 2.5rem;
+            height: 2.5rem;
+        };
+    };
 };
 
-#comment {
-    &__btn {
-        margin: 0;
-        margin-top: .5rem;
-    };
 
-    &__avatar {
-        position: relative;
-        top: 0rem;
-        left: -.25rem;
-        width: 2.5rem;
-        height: 2.5rem;
-    };
-};
 
 @include desktop {
 
