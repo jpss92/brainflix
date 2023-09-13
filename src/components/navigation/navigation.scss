@@ -37,6 +37,14 @@
         flex-direction: row;
         align-items: center;
         margin-top: 2rem;
+
+        &__btn {
+            &--link {
+                position: relative;
+                right: 9%;
+                width: 20%  
+            };
+        };
         
 
         &__logo {
@@ -45,30 +53,20 @@
             margin-right: 20%
             
         };
-    };
-};
 
-@include desktop {
-   .nav {
-    &__btn {
-        &--link {
+        &__search {
+            margin-left: 40%;  
+            width: 40%;
+        }
+       };
+    };
+
+    #nav {
+        &__avatar {
             position: relative;
-            right: 19rem;
-            width: 20%  
-        };
-    };
-
-    &__sesarch {
-        margin-left: 4rem;  
-    }
-   };
-
-   #nav {
-    &__avatar {
-        position: relative;
-        left: 48%;
-    }
-   }
-
-
+            left: 30%;
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+       
 };
