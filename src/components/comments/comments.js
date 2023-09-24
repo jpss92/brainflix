@@ -1,7 +1,11 @@
 
 import CommentForm from '../commentForm/commentForm';
 import '../comments/comments.scss';
-import CurrentVideo from '../currentVideo/currentVideo.js';
+
+function formatDate(timestamp) {
+  const date = new Date(timestamp);
+  return date.toLocaleDateString();
+  };
 
 function Comments({ currentVideo }) {
   
@@ -15,7 +19,7 @@ function Comments({ currentVideo }) {
               <div className="comment__info" key={comment.id}>
                 <div className='comment'>
                   <div className='comment__name'>{comment.name}</div>
-                  <div className='comment__timestamp'>{comment.timestamp}</div>
+                  <div className='comment__timestamp'>{formatDate(comment.timestamp)}</div>
                 </div>
                 <div>{comment.comment}</div>
                 

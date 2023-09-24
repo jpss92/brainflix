@@ -19,7 +19,7 @@ function Navigation() {
             <Avatar id="nav__avatar" className="nav__avatar"src={profileImg} />
         </div>
         <Link to='upload' className='nav__btn--link'>
-            <Button src={uploadImg}>Upload</Button>
+            <Button id="nav__btn" src={uploadImg}>Upload</Button>
         </Link>
         </div>
     );
