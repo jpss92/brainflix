@@ -33,10 +33,11 @@ function Upload() {
         axios
             .post(api + '/videos', publishData) 
             .then(res => {console.log("Upload successfully publihsed")
-        })
+            navigate('/');
+            })
             .catch(error => {
             console.error("Error uploading:", error);
-            });
+        });
     };
         
     return(
