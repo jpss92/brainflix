@@ -26,8 +26,8 @@
         }
     };
 
-    &__player {
-        height: 300px;   
+    &__player { 
+        aspect-ratio: 16/9;
         
         &--background {
             background-color: $secondary-color1;
@@ -56,7 +56,7 @@
         &__player {
             width: 90%;
             margin-left: 5%;
-            height: 31.25rem
+            height: auto;
         }
 
         &__current {
@@ -88,15 +88,5 @@
     }
 };
 
-@include desktop {
-    .video {
-
-        &__player {
-            width: 68%;
-            margin-left: 16%;
-            height: 39.55rem;
-        }
-    }
-}
 
 

@@ -9,16 +9,18 @@
     height: 2.5rem;
     margin: .5rem 0 .5rem;
     display: flex;
-    justify-content: flex-start;
+    
     align-items: center;
     border-radius: .25rem;
     line-height: 1.25rem;
     font-size: .8125rem;
     border: none;
+    text-align: center;
 
     &__icon {
         margin-right: 30%;
         margin-left: 1rem;
+        
     }
 }
 
@@ -26,9 +28,13 @@
     .button {
          
         padding-right: 2rem;
+    };
+}
 
-       &__icon {
-            margin-right: 20%;
-       }
+@include desktop {
+    .button {
+        &__icon {
+            margin-right: 46%;
+        }
     }
 }
