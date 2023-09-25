@@ -4,6 +4,7 @@ import uploadIcon from '../../assets/Icons/publish.svg';
 import Button from '../button/button';
 import axios from 'axios';
 import { useState } from 'react';
+import { useNavigate } from 'react-router';
 
 
 function Upload() {
@@ -11,19 +12,18 @@ function Upload() {
     const api = "http://localhost:8080";
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');
+    const navigate = useNavigate();
 
-    function generateVideoId(prefix) {
+    function generateVideoId() {
         const newVideoId = Math.floor(Math.random() * 10000);
-        return `${prefix}_${newVideoId}`;}
+        return `${newVideoId}`;}
 
         const handlePublish = (e) => {
         e.preventDefault();
 
         const randomId = generateVideoId('video'); 
-        console.log('Random ID:', randomId);
         const uploadedVideoId = Math.floor(Math.random() * 1000);
         const id = uploadedVideoId;
-        console.log("view id", id);
         const publishData = { 
             id,
             title,
@@ -32,7 +32,7 @@ function Upload() {
 
         axios
             .post(api + '/videos', publishData) 
-            .then(res => {console.log("Upload successfully publihsed") 
+            .then(res => {console.log("Upload successfully publihsed")
         })
             .catch(error => {
             console.error("Error uploading:", error);

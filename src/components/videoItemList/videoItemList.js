@@ -1,7 +1,7 @@
 import '../videoItemList/videoItemList.scss';
 import { Link } from 'react-router-dom';
  
-const VideoItemList = ({ video,  }) => {
+const VideoItemList = ({ video }) => {
   
     return (
       <Link to={`/videos/${video.id}`}>
